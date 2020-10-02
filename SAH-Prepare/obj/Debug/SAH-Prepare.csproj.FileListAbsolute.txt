@@ -1,0 +1,13 @@
+C:\Users\EncryptedWeb\source\repos\SAH-Prepare\SAH-Prepare\bin\Debug\SAH-Prepare.exe.config
+C:\Users\EncryptedWeb\source\repos\SAH-Prepare\SAH-Prepare\bin\Debug\SAH-Prepare.exe
+C:\Users\EncryptedWeb\source\repos\SAH-Prepare\SAH-Prepare\bin\Debug\SAH-Prepare.pdb
+C:\Users\EncryptedWeb\source\repos\SAH-Prepare\SAH-Prepare\obj\Debug\SAH-Prepare.csprojAssemblyReference.cache
+C:\Users\EncryptedWeb\source\repos\SAH-Prepare\SAH-Prepare\obj\Debug\SAH-Prepare.exe
+C:\Users\EncryptedWeb\source\repos\SAH-Prepare\SAH-Prepare\obj\Debug\SAH-Prepare.pdb
+C:\Users\Anton\Desktop\SAH-Prepare\SAH-Prepare\obj\Debug\SAH-Prepare.csprojAssemblyReference.cache
+C:\Users\Anton\Desktop\SAH-Prepare\SAH-Prepare\obj\Debug\SAH-Prepare.csproj.CoreCompileInputs.cache
+C:\Users\Anton\Desktop\SAH-Prepare\SAH-Prepare\obj\Debug\SAH-Prepare.exe
+C:\Users\Anton\Desktop\SAH-Prepare\SAH-Prepare\obj\Debug\SAH-Prepare.pdb
+C:\Users\Anton\Desktop\SAH-Prepare\SAH-Prepare\bin\Debug\SAH-Prepare.exe.config
+C:\Users\Anton\Desktop\SAH-Prepare\SAH-Prepare\bin\Debug\SAH-Prepare.exe
+C:\Users\Anton\Desktop\SAH-Prepare\SAH-Prepare\bin\Debug\SAH-Prepare.pdb
