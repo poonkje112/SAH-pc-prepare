@@ -1,0 +1,6 @@
+C:\Users\EncryptedWeb\source\repos\SAH-Prepare\SAH-Prepare\bin\Release\SAH-Prepare.exe.config
+C:\Users\EncryptedWeb\source\repos\SAH-Prepare\SAH-Prepare\bin\Release\SAH-Prepare.exe
+C:\Users\EncryptedWeb\source\repos\SAH-Prepare\SAH-Prepare\bin\Release\SAH-Prepare.pdb
+C:\Users\EncryptedWeb\source\repos\SAH-Prepare\SAH-Prepare\obj\Release\SAH-Prepare.csprojAssemblyReference.cache
+C:\Users\EncryptedWeb\source\repos\SAH-Prepare\SAH-Prepare\obj\Release\SAH-Prepare.exe
+C:\Users\EncryptedWeb\source\repos\SAH-Prepare\SAH-Prepare\obj\Release\SAH-Prepare.pdb

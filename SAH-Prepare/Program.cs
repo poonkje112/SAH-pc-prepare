@@ -3,6 +3,7 @@ using System.IO;
 using System.Net;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -35,50 +36,79 @@ namespace SAH_Prepare
                 string gekozennummer = Console.ReadLine();
                 if(gekozennummer == "1")
                 {
-                    //Avast
-                    
-                    Console.WriteLine("Cool! Full install");
-                    Console.WriteLine("Laten we starte met Anti-Virus!");
-                    Console.WriteLine("Meestal is dat wel het belangerijkste of niet? :P");
-                    
-                    //avast
+                    Console.WriteLine("Wil je avast ook installeren?");
+                    Console.WriteLine("Kies: ja of nee (*GEEN HOOFDLETTERS*)");
+                    if (Console.ReadLine() == "ja")
+                    {
+                        //avast
 
-                    Console.WriteLine("Starting avast download");
-                    DownloadAndExecute("https://cdn.thatgeek.dev/sah/antivirus.exe", "antivirus.exe");
+                        Console.WriteLine("Starting avast download");
+                        DownloadAndExecute("https://cdn.thatgeek.dev/sah/antivirus.exe", "antivirus.exe");
 
-                    // MalwareBytes
+                        // MalwareBytes
 
-                    Console.WriteLine("Starting MalewareBytes download");
-                    DownloadAndExecute("https://cdn.thatgeek.dev/sah/malwarebytes.exe", "malwarebytes.exe");
+                        Console.WriteLine("Starting MalewareBytes download");
+                        DownloadAndExecute("https://cdn.thatgeek.dev/sah/malwarebytes.exe", "malwarebytes.exe");
 
-                    Console.WriteLine("FireFox & Thunderbird are next! :D");
-                    Console.WriteLine("Wie wil er nog internet explorer / edge gebruiken 🤮");
+                        Console.WriteLine("FireFox & Thunderbird are next! :D");
+                        Console.WriteLine("Wie wil er nog internet explorer / edge gebruiken 🤮");
 
 
-                    //Firefox
+                        //Firefox
 
-                    Console.WriteLine("Starting firefox download");
-                    DownloadAndExecute("https://cdn.thatgeek.dev/sah/firefox.exe", "firefox.exe");
+                        Console.WriteLine("Starting firefox download");
+                        DownloadAndExecute("https://cdn.thatgeek.dev/sah/firefox.exe", "firefox.exe");
 
-                    //Thunderbird
+                        //Thunderbird
 
-                    Console.WriteLine("Starting thunderbird download");
-                    DownloadAndExecute("https://cdn.thatgeek.dev/sah/thunderbird.exe", "thunderbird.exe");
+                        Console.WriteLine("Starting thunderbird download");
+                        DownloadAndExecute("https://cdn.thatgeek.dev/sah/thunderbird.exe", "thunderbird.exe");
 
-                    Console.WriteLine("Extra handy dandy tools ;P");
+                        Console.WriteLine("Extra handy dandy tools ;P");
 
 
-                    // CCleaner
+                        // CCleaner
 
-                    Console.WriteLine("Starting ccleaner download");
-                    DownloadAndExecute("https://cdn.thatgeek.dev/sah/ccleaner.exe", "ccleaner.exe");
+                        Console.WriteLine("Starting ccleaner download");
+                        DownloadAndExecute("https://cdn.thatgeek.dev/sah/ccleaner.exe", "ccleaner.exe");
 
+                    }
+                    else
+                    {
+                        // MalwareBytes
+
+                        Console.WriteLine("Starting MalewareBytes download");
+                        DownloadAndExecute("https://cdn.thatgeek.dev/sah/malwarebytes.exe", "malwarebytes.exe");
+
+                        Console.WriteLine("FireFox & Thunderbird are next! :D");
+                        Console.WriteLine("Wie wil er nog internet explorer / edge gebruiken 🤮");
+
+
+                        //Firefox
+
+                        Console.WriteLine("Starting firefox download");
+                        DownloadAndExecute("https://cdn.thatgeek.dev/sah/firefox.exe", "firefox.exe");
+
+                        //Thunderbird
+
+                        Console.WriteLine("Starting thunderbird download");
+                        DownloadAndExecute("https://cdn.thatgeek.dev/sah/thunderbird.exe", "thunderbird.exe");
+
+                        Console.WriteLine("Extra handy dandy tools ;P");
+
+
+                        // CCleaner
+
+                        Console.WriteLine("Starting ccleaner download");
+                        DownloadAndExecute("https://cdn.thatgeek.dev/sah/ccleaner.exe", "ccleaner.exe");
+
+                    }
                 }
                 if (gekozennummer == "2")
                 {
                     Console.WriteLine("Cool! Antivirus, safety first ;)");
                     
-                    // Avast
+                    // Avast    
 
                     Console.WriteLine("Starting avast download");
                     DownloadAndExecute("https://cdn.thatgeek.dev/sah/antivirus.exe", "antivirus.exe");
