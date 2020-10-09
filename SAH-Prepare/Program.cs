@@ -89,13 +89,13 @@ namespace SAH_Prepare
 					{
 						//avast
 
-						Console.WriteLine("Starting Avast download");
+						Console.WriteLine("Avast download wordt gestart!");
 						DownloadAndExecute("https://cdn.thatgeek.dev/sah/antivirus.exe", "antivirus.exe");
 					}
 
 					// MalwareBytes
 
-					Console.WriteLine("Starting MalewareBytes download");
+					Console.WriteLine("MalwareBytes download wordt gestart!");
 					DownloadAndExecute("https://cdn.thatgeek.dev/sah/malwarebytes.exe", "malwarebytes.exe");
 				}
 
@@ -104,12 +104,12 @@ namespace SAH_Prepare
 				{
 					//Firefox
 
-					Console.WriteLine("Starting Firefox download");
+					Console.WriteLine("Firefox download wordt gestart!");
 					DownloadAndExecute("https://cdn.thatgeek.dev/sah/firefox.exe", "firefox.exe");
 
 					//Thunderbird
 
-					Console.WriteLine("Starting Thunderbird download");
+					Console.WriteLine("Thunderbird download wordt gestart!");
 					DownloadAndExecute("https://cdn.thatgeek.dev/sah/thunderbird.exe", "thunderbird.exe");
 
 
@@ -117,7 +117,7 @@ namespace SAH_Prepare
 					{
 						// CCleaner
 
-						Console.WriteLine("Starting CCleaner download");
+						Console.WriteLine("CCleaner download wordt gestart!");
 						DownloadAndExecute("https://cdn.thatgeek.dev/sah/ccleaner.exe", "ccleaner.exe");
 					}
 				}
