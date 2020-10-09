@@ -3,8 +3,10 @@ using System.IO;
 using System.Net;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -15,6 +17,15 @@ namespace SAH_Prepare
 	{
 		static void Main(string[] args)
 		{
+			if (!IsAdmin())
+			{
+				ProcessStartInfo asAdmin = new ProcessStartInfo(System.Reflection.Assembly.GetEntryAssembly().Location);
+				asAdmin.UseShellExecute = true;
+				asAdmin.Verb = "runas";
+				Process.Start(asAdmin);
+				return;
+			}
+			
 			Console.WriteLine("Welkom");
 			Console.WriteLine("Dit is de SAH Prepare tool!");
 			Console.WriteLine("Gemaakt door Justin Pooters");
@@ -128,11 +139,22 @@ namespace SAH_Prepare
 		{
 #if !DEBUG
 			AutoResetEvent are = new AutoResetEvent(false);
+			string path = Path.Combine(Directory.GetCurrentDirectory(), outputFileName);
+			
+			if(File.Exists(path)) File.Delete(path);
+			
 			var client = new WebClient();
 			client.DownloadFileCompleted += new AsyncCompletedEventHandler((sender, args) =>
 			{
-				var path = Path.Combine(Directory.GetCurrentDirectory(), outputFileName);
-				System.Diagnostics.Process.Start(path);
+				try
+				{
+					System.Diagnostics.Process.Start(path);
+				}
+				catch (Exception e)
+				{
+					Console.WriteLine($"Error: {e.Message}");
+				}
+
 				are.Set();
 			});
 
@@ -151,6 +173,11 @@ namespace SAH_Prepare
 			}
 
 			return false;
+		}
+
+		private static bool IsAdmin()
+		{
+			return (new WindowsPrincipal(WindowsIdentity.GetCurrent())).IsInRole(WindowsBuiltInRole.Administrator);
 		}
 	}
 }
