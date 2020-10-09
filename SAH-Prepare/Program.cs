@@ -18,7 +18,7 @@ namespace SAH_Prepare
 			Console.WriteLine("Welkom");
 			Console.WriteLine("Dit is de SAH Prepare tool!");
 			Console.WriteLine("Gemaakt door Justin Pooters");
-			Console.WriteLine("Contributors:");
+			Console.WriteLine("\nContributors:");
 			Console.WriteLine("Aaron Knoop");
 
 			string choice = null;
@@ -43,7 +43,7 @@ namespace SAH_Prepare
 					"1: Full install, dit installeert: ThunderBird, CCleaner, Malwarebytes, Avast anti-virus en FireFox web browser");
 				Console.WriteLine("2: AntiVirus, dit installeert Malwarebytes en Avast anti-virus");
 				Console.WriteLine("3: Standaard, Dit installeert Firefox en ThunderBird");
-				Console.WriteLine("Kis 1, 2 of 3");
+				Console.WriteLine("Kies 1, 2 of 3");
 
 				int installType = -1;
 
@@ -88,7 +88,7 @@ namespace SAH_Prepare
 					{
 						//avast
 
-						Console.WriteLine("Starting avast download");
+						Console.WriteLine("Starting Avast download");
 						DownloadAndExecute("https://cdn.thatgeek.dev/sah/antivirus.exe", "antivirus.exe");
 					}
 
@@ -103,12 +103,12 @@ namespace SAH_Prepare
 				{
 					//Firefox
 
-					Console.WriteLine("Starting firefox download");
+					Console.WriteLine("Starting Firefox download");
 					DownloadAndExecute("https://cdn.thatgeek.dev/sah/firefox.exe", "firefox.exe");
 
 					//Thunderbird
 
-					Console.WriteLine("Starting thunderbird download");
+					Console.WriteLine("Starting Thunderbird download");
 					DownloadAndExecute("https://cdn.thatgeek.dev/sah/thunderbird.exe", "thunderbird.exe");
 
 
@@ -116,7 +116,7 @@ namespace SAH_Prepare
 					{
 						// CCleaner
 
-						Console.WriteLine("Starting ccleaner download");
+						Console.WriteLine("Starting CCleaner download");
 						DownloadAndExecute("https://cdn.thatgeek.dev/sah/ccleaner.exe", "ccleaner.exe");
 					}
 				}
