@@ -20,6 +20,7 @@ namespace SAH_Prepare
 			Console.WriteLine("Gemaakt door Justin Pooters");
 			Console.WriteLine("\nContributors:");
 			Console.WriteLine("Aaron Knoop");
+			Console.WriteLine();
 
 			string choice = null;
 
