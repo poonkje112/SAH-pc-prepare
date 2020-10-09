@@ -41,13 +41,8 @@ namespace SAH_Prepare
 				choice = Console.ReadLine();
 				Console.Clear();
 			}
-
-			if (choice.ToLower().Contains("n"))
-			{
-				Console.WriteLine("Druk op Enter om af te sluiten");
-				Console.ReadLine();
-			}
-			else
+			
+			if(choice.ToLower().Contains("j"))
 			{
 				Console.WriteLine("De installatie kan nu beginnen");
 				Console.WriteLine("Kies een van de volgende opties");
@@ -133,6 +128,9 @@ namespace SAH_Prepare
 					}
 				}
 			}
+			
+			Console.WriteLine("Druk op een toets om deze programma te sluiten");
+			Console.Read();
 		}
 
 		private static void DownloadAndExecute(string url, string outputFileName)
