@@ -1,15 +1,6 @@
 ﻿using System;
-using System.IO;
-using System.Net;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Diagnostics;
-using System.Globalization;
-using System.Linq;
 using System.Security.Principal;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace SAH_Prepare
 {
